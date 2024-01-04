@@ -1,1 +1,1 @@
-# nextJs-tutorial
+# This is a NextJS dashboard tutorial
