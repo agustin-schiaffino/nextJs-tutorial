@@ -2,7 +2,7 @@
 const shimmer =
   'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
 
-export function CardSkeleton() {
+export const CardSkeleton = () => {
   return (
     <div
       className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-2 shadow-sm`}
@@ -18,7 +18,7 @@ export function CardSkeleton() {
   );
 }
 
-export function CardsSkeleton() {
+export const CardsSkeleton = () => {
   return (
     <>
       <CardSkeleton />
@@ -29,7 +29,7 @@ export function CardsSkeleton() {
   );
 }
 
-export function RevenueChartSkeleton() {
+export const RevenueChartSkeleton = () => {
   return (
     <div className={`${shimmer} relative w-full overflow-hidden md:col-span-4`}>
       <div className="mb-4 h-8 w-36 rounded-md bg-gray-100" />
@@ -44,7 +44,7 @@ export function RevenueChartSkeleton() {
   );
 }
 
-export function InvoiceSkeleton() {
+export const InvoiceSkeleton = () => {
   return (
     <div className="flex flex-row items-center justify-between border-b border-gray-100 py-4">
       <div className="flex items-center">
@@ -59,7 +59,7 @@ export function InvoiceSkeleton() {
   );
 }
 
-export function LatestInvoicesSkeleton() {
+export const LatestInvoicesSkeleton = () => {
   return (
     <div
       className={`${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4`}
@@ -82,7 +82,7 @@ export function LatestInvoicesSkeleton() {
   );
 }
 
-export default function DashboardSkeleton() {
+const DashboardSkeleton = () => {
   return (
     <>
       <div
@@ -102,7 +102,7 @@ export default function DashboardSkeleton() {
   );
 }
 
-export function TableRowSkeleton() {
+export const TableRowSkeleton = () => {
   return (
     <tr className="w-full border-b border-gray-100 last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
       {/* Customer Name and Image */}
@@ -139,7 +139,7 @@ export function TableRowSkeleton() {
   );
 }
 
-export function InvoicesMobileSkeleton() {
+export const InvoicesMobileSkeleton = () => {
   return (
     <div className="mb-2 w-full rounded-md bg-white p-4">
       <div className="flex items-center justify-between border-b border-gray-100 pb-8">
@@ -163,7 +163,7 @@ export function InvoicesMobileSkeleton() {
   );
 }
 
-export function InvoicesTableSkeleton() {
+export const InvoicesTableSkeleton = () => {
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
@@ -216,3 +216,5 @@ export function InvoicesTableSkeleton() {
     </div>
   );
 }
+
+export default DashboardSkeleton;

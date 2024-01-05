@@ -5,9 +5,9 @@ import {
   ExclamationCircleIcon,
 } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
-import { Button } from './button';
+import Button from './button';
 
-export default function LoginForm() {
+const LoginForm = () => {
   return (
     <form className="space-y-3">
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
@@ -64,10 +64,12 @@ export default function LoginForm() {
   );
 }
 
-function LoginButton() {
+const LoginButton = () => {
   return (
     <Button className="mt-4 w-full">
       Log in <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
     </Button>
   );
 }
+
+export default LoginForm;

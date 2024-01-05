@@ -22,7 +22,7 @@ const links = [
 ];
 
 
-export default function NavLinks() {
+const NavLinks = () => {
 const pathName = usePathname();
   return (
     <>
@@ -47,3 +47,5 @@ const pathName = usePathname();
     </>
   );
 }
+
+export default NavLinks;
